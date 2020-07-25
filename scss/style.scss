@@ -9,7 +9,7 @@ $active: #00ffde;
 
 body {
     background-color: $light;
-    font-family: "Circe", sans-serif;
+    font-family: 'Circe', sans-serif;
 }
 
 
@@ -613,14 +613,14 @@ img {
     font-style: normal;
 }
 @font-face {
-    font-family: "Circe";
+    font-family: 'Circe';
     src: url("../fonts/Circe-ExtraBold.woff") format("woff");
     font-weight: 800;
     font-style: normal;
 }
 @font-face {
-    font-family: "Circe";
-    src: url("../fonts/Circe-Regular.woff") format("woff");
+    font-family: 'Circe';
+    src: url("../fonts/Circe-Regular.woff") format('woff');
     font-weight: 400;
     font-style: normal;
 }
