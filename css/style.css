@@ -404,7 +404,7 @@ img {
   box-shadow: 0 7px 22px 2px rgba(39, 134, 251, 0.15), 0 1px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   background-color: #ebf1f7;
-  background-image: url("/img/bg/remont-noutbukov-v-chite.png");
+  background-image: url("../img/bg/remont-noutbukov-v-chite.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -456,7 +456,7 @@ img {
   padding: 32px 0 49px 0;
   z-index: 0;
   position: relative;
-  background-image: url("/img/bg/High-Quality-Workers.png");
+  background-image: url("../img/bg/High-Quality-Workers.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -481,7 +481,7 @@ img {
 }
 
 .contact {
-  background-image: url("/img/bg/bgmap.png");
+  background-image: url("../img/bg/bgmap.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
@@ -572,37 +572,37 @@ img {
 
 @font-face {
   font-family: "Circe";
-  src: url("/fonts/Circe-Bold.woff") format("woff");
+  src: url("../fonts/Circe-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Circe";
-  src: url("/fonts/Circe-ExtraBold.woff") format("woff");
+  src: url("../fonts/Circe-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Circe";
-  src: url("/fonts/Circe-Regular.woff") format("woff");
+  src: url("../fonts/Circe-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("/fonts/Gilroy-Bold.woff") format("woff");
+  src: url("../fonts/Gilroy-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("/fonts/Gilroy-Regular.woff") format("woff");
+  src: url("../fonts/Gilroy-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("/fonts/Gilroy-ExtraBold.woff") format("woff");
+  src: url("../fonts/Gilroy-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
