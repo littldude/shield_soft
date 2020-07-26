@@ -81,17 +81,21 @@
 
     <section class="intro">
         <div class="container">
-            <nav class="header__menu">
-                <a class="header__menu--link active" href="#">Прайс</a> 
-                <!-- /.header__menu--link -->
-                <a class="header__menu--link" href="#">Преимущества</a> 
-                <!-- /.header__menu--link -->
-                <a class="header__menu--link" href="#">Отзывы</a> 
-                <!-- /.header__menu--link -->
-                <a class="header__menu--link" href="#">Контакты</a> 
-                <!-- /.header__menu--link -->
-            </nav>
-            <!-- /.header__menu -->
+            <div class="row">
+                <nav class="header__menu">
+                    <a class="header__menu--link active" href="#">Прайс</a> 
+                    <!-- /.header__menu--link -->
+                    <a class="header__menu--link" href="#">Преимущества</a> 
+                    <!-- /.header__menu--link -->
+                    <a class="header__menu--link" href="#">Отзывы</a> 
+                    <!-- /.header__menu--link -->
+                    <a class="header__menu--link" href="#">Контакты</a> 
+                    <!-- /.header__menu--link -->
+                </nav>
+                <!-- /.header__menu -->
+            </div>
+            <!-- /.row -->
+            
             <div class="row">
                 <div class="col-9">
                     <h1 class="intro__title">Срочная компьютерная помощь с выездом на дом! </h1>
@@ -408,10 +412,101 @@
     <!-- /.reason -->
 
     <section class="review">
-        <div class="contaier">
+        <div class="container">
             <h3 class="review__title title">Почитайте <span class="blue">отзывы</span> о нас</h3>
             <!-- /.review__title -->
-          
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide review__item">
+                        <img class="review__item--img" src="../img/photo-1.png" alt="">
+                        <div class="review__item--text item-text">
+                            <div class="item-text__top">
+                                <div class="item-text__name">Ирина Ситор</div>
+                                <!-- /.item__text--name -->
+    
+                                <div class="item-text__date">23.04.2020</div>
+                                <!-- /.item__text--date -->
+                            </div>
+                            <!-- /.item__text--top -->
+                            <div class="item-text__text">
+                                Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем 
+                            </div>
+                            <!-- /.item__text--text -->
+                        </div>
+                        <!-- /.swiper-slide__text slide__text -->
+                    </div>
+                    <!-- /.swiper-slide -->
+                    <div class="swiper-slide review__item">
+                        <img class="review__item--img" src="../img/photo-2.png" alt="">
+                        <div class="review__item--text item-text">
+                            <div class="item-text__top">
+                                <div class="item-text__name">Ирина Ситор</div>
+                                <!-- /.item__text--name -->
+    
+                                <div class="item-text__date">23.04.2020</div>
+                                <!-- /.item__text--date -->
+                            </div>
+                            <!-- /.item__text--top -->
+                            <div class="item-text__text">
+                                Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем 
+                            </div>
+                            <!-- /.item__text--text -->
+                        </div>
+                        <!-- /.swiper-slide__text slide__text -->
+                    </div>
+                    <!-- /.swiper-slide -->
+
+                    <div class="swiper-slide review__item">
+                        <img class="review__item--img" src="../img/photo-1.png" alt="">
+                        <div class="review__item--text item-text">
+                            <div class="item-text__top">
+                                <div class="item-text__name">Ирина Ситор</div>
+                                <!-- /.item__text--name -->
+    
+                                <div class="item-text__date">23.04.2020</div>
+                                <!-- /.item__text--date -->
+                            </div>
+                            <!-- /.item__text--top -->
+                            <div class="item-text__text">
+                                Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем 
+                            </div>
+                            <!-- /.item__text--text -->
+                        </div>
+                        <!-- /.swiper-slide__text slide__text -->
+                    </div>
+                    <!-- /.swiper-slide -->
+                    <div class="swiper-slide review__item">
+                        <img class="review__item--img" src="../img/photo-2.png" alt="">
+                        <div class="review__item--text item-text">
+                            <div class="item-text__top">
+                                <div class="item-text__name">Ирина Ситор</div>
+                                <!-- /.item__text--name -->
+    
+                                <div class="item-text__date">23.04.2020</div>
+                                <!-- /.item__text--date -->
+                            </div>
+                            <!-- /.item__text--top -->
+                            <div class="item-text__text">
+                                Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем 
+                            </div>
+                            <!-- /.item__text--text -->
+                        </div>
+                        <!-- /.swiper-slide__text slide__text -->
+                    </div>
+                    <!-- /.swiper-slide -->
+                </div>
+                <!-- /.swiper-wrapper -->
+                <div class="swiper-pagination"></div>
+                <!-- /.swiper-pagination -->
+                <div class="swiper-button-prev"></div>
+                <!-- /.swiper-button-prev -->
+                <div class="swiper-button-next"></div>
+                <!-- /.swiper-button-next -->
+            </div>
+            <!-- /.swiper-container -->
+
+                
+            
             
             
             
@@ -424,6 +519,9 @@
                     el: '.swiper-pagination',
                     clickable: true,
                   },
+                 width: 1004,
+                 height: 300
+                
                 });
               </script>
         </div>
