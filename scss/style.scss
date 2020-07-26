@@ -3,7 +3,9 @@ $dark: #000000;
 $light: #ffffff;
 $active: #00ffde;
 
-* {
+*,
+::before,
+::after {
     box-sizing: border-box;
 }
 
@@ -100,6 +102,16 @@ img {
     }
     &__btn {
         margin-left: 20px;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        &--header {
+            border-bottom: 1px #c6c6c6 solid;
+        }
+        &:hover {
+            color: #41aaff;
+        }
     }
 }
 
@@ -204,14 +216,25 @@ img {
     }
     &__subtitle {
         font-size: 27px;
-        font-weight: 400;
+        font-weight: 800;
         line-height: 56px;
     }
     &__inner {
         margin-top: 45px;
     }
     &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--icon {
+            margin-right: 12px;
+            width: 24px;
+            height: 24px;
+            fill: #00ffde;
+        }
         &--text {
+            max-width: 111px;
+            line-height: 1;
             color: $light;
             font-size: 15px;
             font-weight: 800;
@@ -342,10 +365,35 @@ img {
         text-align: center;
     }
     &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-top: 52px;
     }
     &__item {
         text-align: center;
+        &--wrapper {
+           position: relative;
+           &:first-child {
+               &::before {
+                   display: none;
+               }
+            }
+            &::before {
+                position: absolute;
+                top: 50%;
+                right: 100%;
+                display: block;
+                content: url("../img/next.svg");
+                width: 15px;
+                height: 15px;
+               
+            }
+            
+        }
+        &--icon {
+            fill: $blue;
+        }
         &--text {
             padding: 0 35px;
             color: $dark;
@@ -360,6 +408,25 @@ img {
     &__title {
         margin-bottom: 24px;
         text-align: center;
+    }
+    &__more {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        color: $dark;
+        font-size: 14px;
+        font-weight: 400;
+        &--link {
+            color: #007bfa;
+            text-decoration: underline;
+        }
+        &--card {
+            margin-left: 10px;
+        }
+    }
+    &__money {
+        display: flex;
+        align-items: center;
     }
     &__table {
         padding: 17px 0;
@@ -479,7 +546,6 @@ img {
         margin-bottom: 45px;
     }
 }
-
 
 
 
@@ -606,7 +672,38 @@ img {
     margin-left: 55px;
 }
 
+/*Icons*/
 
+.i-bphone {
+    margin-right: 5px;
+    width: 12px;
+    height: 13px;
+    fill: #000000;
+}
+
+.i-tech {
+    width: 31px;
+    height: 31px;
+}
+.i-phone {
+    margin-bottom: 18px;
+    width: 31px;
+    height: 31px;
+}
+.i-car {
+    width: 100px;
+    height: 50px;
+}
+.i-furniture {
+    margin-bottom: 20px;
+    width: 29px;
+    height: 29px;
+}
+.i-like {
+    margin-bottom: 11px;
+    width: 27px;
+    height: 25px;
+}
 
 @font-face {
     font-family: 'Circe';

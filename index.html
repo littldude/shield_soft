@@ -49,8 +49,15 @@
                         </div>
                         <!-- /.city -->
                         <div class="contacts">
-                            <a class="contacts__phone" href="+7 (927) 131-80-32">+7 (927) 131-80-32</a>
-                            <!-- /.contacts__phone -->
+                            <div class="contacts__wrapper contacts__wrapper--header">
+                                <svg class="i-bphone">
+                                    <use xlink:href="sprite.svg#bphone"></use>
+                                </svg>
+                                <a class="contacts__phone" href="+7 (927) 131-80-32">+7 (927) 131-80-32</a>
+                                <!-- /.contacts__phone -->
+                            </div>
+                            <!-- /.contacts__wrapper -->
+                            
                             <div class="contacts__btn">
                                 <button class="btn btn__dark btn__call">Вызвать мастера</button> <!-- /.btn -->
                             </div>
@@ -98,16 +105,25 @@
             <!-- /.row -->
             <div class="row justify-content-start intro__inner">
                 <div class="col-2 intro__item">
+                    <svg class="intro__item--icon">
+                        <use href="sprite.svg#clock"></use>
+                    </svg>
                     <div class="intro__item--text">Выезд в течение 10 минут</div>
                     <!-- /.intro__item--text -->
                 </div>
                 <!-- /.col-2 -->
                 <div class="col-2 intro__item">
+                    <svg class="intro__item--icon">
+                        <use href="sprite.svg#correct"></use>
+                    </svg>
                     <div class="intro__item--text">Гарантия на работу</div>
                     <!-- /.intro__item--text -->
                 </div>
                 <!-- /.col-2 -->
                 <div class="col-2 intro__item">
+                    <svg class="i-tech intro__item--icon">
+                        <use href="sprite.svg#tech"></use>
+                    </svg>
                     <div class="intro__item--text">Мастера своего дела</div>
                     <!-- /.intro__item--text -->
                 </div>
@@ -220,41 +236,64 @@
         <div class="container">
             <h3 class="work__title title"><span class="blue">Как</span> мы работаем</h3>
             <!-- /.work__title -->
-            <div class="row work__box">
-                <div class="col-3">
-                    <div class="work__item">
-                        <!--Image-->
-                        <div class="work__item--text">Вы звоните нам</div>
-                        <!-- /.work___item--text -->
-                    </div>
-                    <!-- /.work__item -->
+            <div class="row justify-content-center work__box">
+                <div class="col-3 work__item--wrapper">
+                    
+                        <div class="work__item">
+                            <svg class="work__item--icon i-phone">
+                                <use href="sprite.svg#phone"></use>
+                            </svg>
+                            <div class="work__item--text">Вы звоните нам</div>
+                            <!-- /.work___item--text -->
+                        </div>
+                        <!-- /.work__item -->
+                    
+                    <!-- /.work__item--wrapper -->
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3">
-                    <div class="work__item">
-                        <!--Image-->
-                        <div class="work__item--text">Мастер выезжает к Вам на дом</div>
-                        <!-- /.work___item--text -->
-                    </div>
-                    <!-- /.work__item -->
+                <div class="col-3 work__item--wrapper">
+                  
+                        <div class="work__item">
+                            <svg class="work__item--icon i-car">
+                                <use href="sprite.svg#car"></use>
+                            </svg>
+                            <div class="work__item--text">Мастер выезжает к Вам на дом</div>
+                            <!-- /.work___item--text -->
+                        </div>
+                        <!-- /.work__item -->
+                    
+                    <!-- /.work__item--wrapper -->
+                    
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3">
-                    <div class="work__item">
-                        <!--Image-->
-                        <div class="work__item--text">Производит чистку Вашего компьютера</div>
-                        <!-- /.work___item--text -->
-                    </div>
-                    <!-- /.work__item -->
+                <div class="col-3 work__item--wrapper">
+                    
+                        <div class="work__item">
+                            <svg class="work__item--icon i-furniture">
+                                <use href="sprite.svg#furniture"></use>
+                            </svg>
+                            <div class="work__item--text">Производит чистку Вашего компьютера</div>
+                            <!-- /.work___item--text -->
+                        </div>
+                        <!-- /.work__item -->
+                    
+                    <!-- /.work__item--wrapper -->
+                    
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3">
-                    <div class="work__item">
-                        <!--Image-->
-                        <div class="work__item--text">Вы оплачиваете и получаете гарантию</div>
-                        <!-- /.work___item--text -->
+                <div class="col-3 work__item--wrapper">
+                    <div class="">
+                        <div class="work__item">
+                            <svg class="work__item--icon i-like">
+                                <use href="sprite.svg#like"></use>
+                            </svg>
+                            <div class="work__item--text">Вы оплачиваете и получаете гарантию</div>
+                            <!-- /.work___item--text -->
+                        </div>
+                        <!-- /.work__item -->
                     </div>
-                    <!-- /.work__item -->
+                    <!-- /.work__item--wrapper -->
+                    
                 </div>
                 <!-- /.col-3 -->
             </div>
@@ -284,6 +323,31 @@
                 </tbody>
             </table>
             <!-- /.price__table -->    
+            <div class="price__more">
+                <span>Это не весь список, посмотреть все услуги вы можете <a href="#" class="price__more--link">нажав сюда</a>
+                     <!-- /.price__more--link --> 
+                </span> 
+                <!-- /.price__more -->
+                <div class="price__money">
+                    <span>Возможна безналичная оплата</span>
+                    <a class="price__more--card" href="#">
+                        <img src="../img/logo-yandex-money.png" alt="Яндекс деньги">
+                    </a>
+                     <!-- /.price__more--card -->
+                     <a class="price__more--card" href="#">
+                        <img src="../img/mastercard.png" alt="Master Card">
+                    </a>
+                     <!-- /.price__more--card -->
+                     <a class="price__more--card" href="#">
+                        <img src="../img/visa-logo-icon-png_44632.png" alt="Visa">
+                    </a>
+                     <!-- /.price__more--card -->
+                </div>
+                <!-- /.price__money -->
+                
+            </div>
+            <!-- /.price__more -->
+            
         </div>
         <!-- /.container -->
     </section>
@@ -347,33 +411,14 @@
         <div class="contaier">
             <h3 class="review__title title">Почитайте <span class="blue">отзывы</span> о нас</h3>
             <!-- /.review__title -->
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide inner">
-
-                          <div class="inner__img">
-                             
-                          </div>
-                          <!-- /.inner__img -->
-                   
-                  </div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                  <div class="swiper-slide">Slide 4</div>
-                  <div class="swiper-slide">Slide 5</div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-              </div>
+          
             
             
             
               <!-- Initialize Swiper -->
               <script>
                 var swiper = new Swiper('.swiper-container', {
-                  slidesPerView: 3,
+                  slidesPerView: 2,
                   spaceBetween: 30,
                   pagination: {
                     el: '.swiper-pagination',
@@ -503,8 +548,14 @@
                 </div>
                     <!-- /.footer__menu -->
                 <div class="col-auto contacts">
-                    <a class="contacts__phone" href="+7 (927) 131-80-32">+7 (927) 131-80-32</a>
-                    <!-- /.contacts__phone -->
+                    <div class="contacts__wrapper">
+                        <svg class="i-bphone">
+                            <use xlink:href="sprite.svg#bphone"></use>
+                        </svg>
+                        <a class="contacts__phone" href="+7 (927) 131-80-32">+7 (927) 131-80-32</a>
+                        <!-- /.contacts__phone -->
+                    </div>
+                    <!-- /.contacts__wrapper -->
                     <div class="contacts__btn">
                         <button class="btn btn__dark btn__footer">Вызвать мастера</button> <!-- /.btn -->
                     </div>

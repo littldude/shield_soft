@@ -1,10 +1,12 @@
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
 body {
   background-color: #ffffff;
-  font-family: "Circe";
+  font-family: "Circe", sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -93,6 +95,16 @@ img {
 }
 .contacts__btn {
   margin-left: 20px;
+}
+.contacts__wrapper {
+  display: flex;
+  align-items: center;
+}
+.contacts__wrapper--header {
+  border-bottom: 1px #c6c6c6 solid;
+}
+.contacts__wrapper:hover {
+  color: #41aaff;
 }
 
 .btn {
@@ -196,13 +208,26 @@ img {
 }
 .intro__subtitle {
   font-size: 27px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 56px;
 }
 .intro__inner {
   margin-top: 45px;
 }
+.intro__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro__item--icon {
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+  fill: #00ffde;
+}
 .intro__item--text {
+  max-width: 111px;
+  line-height: 1;
   color: #ffffff;
   font-size: 15px;
   font-weight: 800;
@@ -324,10 +349,31 @@ img {
   text-align: center;
 }
 .work__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 52px;
 }
 .work__item {
   text-align: center;
+}
+.work__item--wrapper {
+  position: relative;
+}
+.work__item--wrapper:first-child::before {
+  display: none;
+}
+.work__item--wrapper::before {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  display: block;
+  content: url("../img/next.svg");
+  width: 15px;
+  height: 15px;
+}
+.work__item--icon {
+  fill: #0089f9;
 }
 .work__item--text {
   padding: 0 35px;
@@ -339,6 +385,25 @@ img {
 .price__title {
   margin-bottom: 24px;
   text-align: center;
+}
+.price__more {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+}
+.price__more--link {
+  color: #007bfa;
+  text-decoration: underline;
+}
+.price__more--card {
+  margin-left: 10px;
+}
+.price__money {
+  display: flex;
+  align-items: center;
 }
 .price__table {
   padding: 17px 0;
@@ -570,6 +635,41 @@ img {
   margin-left: 55px;
 }
 
+/*Icons*/
+.i-bphone {
+  margin-right: 5px;
+  width: 12px;
+  height: 13px;
+  fill: #000000;
+}
+
+.i-tech {
+  width: 31px;
+  height: 31px;
+}
+
+.i-phone {
+  margin-bottom: 18px;
+  width: 31px;
+  height: 31px;
+}
+
+.i-car {
+  width: 100px;
+  height: 50px;
+}
+
+.i-furniture {
+  margin-bottom: 20px;
+  width: 29px;
+  height: 29px;
+}
+
+.i-like {
+  margin-bottom: 11px;
+  width: 27px;
+  height: 25px;
+}
 
 @font-face {
   font-family: "Circe";
