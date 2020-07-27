@@ -17,8 +17,12 @@
     <header class="header">
         <div class="container">
             <div class="header__top">
+                <button class="header__top--burger">
+                    <svg class="i-menu">
+                        <use href="sprite.svg#menu"></use>
+                </button>
                 <div class="row justify-content-between header__main">
-                    <a class="col-xl-3 logo" href="#">
+                    <a class="col-lg-auto logo" href="#">
                         <div class="logo__img">
                             <img class="i-shield" src="img/shield.svg" alt="Логотип Shield Soft" >
                         </div>
@@ -32,7 +36,7 @@
                     </a>
                     <!-- /.col-3 -->
 
-                    <div class="col-xl-9 inf">
+                    <div class="col-lg-8 col-xl-9 inf">
                         <div class="city">
                             <div class="city__text">Ваш город:</div>
                             <!-- /.city__text -->
@@ -66,16 +70,13 @@
                         <!-- /.contacts-->
                     </div>
                     <!-- /.col-9 -->
-
                 </div>
                 <!-- /.row -->
             </div>
             <!-- /.header__top -->
-               
-           
+
         </div>
         <!-- /.container -->
-
     </header>
     <!-- /.header -->
 
@@ -101,7 +102,7 @@
             <!-- /.row -->
             
             <div class="row">
-                <div class="col-9">
+                <div class="col-sm-12 col-lg-9">
                     <h1 class="intro__title">Срочная компьютерная помощь с выездом на дом! </h1>
                     <!-- /.intro__title -->
                     <h2 class="intro__subtitle">
@@ -111,8 +112,8 @@
                 <!-- /.col-9 -->
             </div>
             <!-- /.row -->
-            <div class="row justify-content-start intro__inner">
-                <div class="col-2 intro__item">
+            <div class="row justify-content-lg-start justify-content-sm-center intro__inner">
+                <div class="col-sm-4 col-lg-2 intro__item">
                     <svg class="intro__item--icon">
                         <use href="sprite.svg#clock"></use>
                     </svg>
@@ -120,7 +121,7 @@
                     <!-- /.intro__item--text -->
                 </div>
                 <!-- /.col-2 -->
-                <div class="col-2 intro__item">
+                <div class="col-sm-4 col-lg-2 intro__item">
                     <svg class="intro__item--icon">
                         <use href="sprite.svg#correct"></use>
                     </svg>
@@ -128,7 +129,7 @@
                     <!-- /.intro__item--text -->
                 </div>
                 <!-- /.col-2 -->
-                <div class="col-2 intro__item">
+                <div class="col-sm-4 col-lg-2 intro__item">
                     <svg class="i-tech intro__item--icon">
                         <use href="sprite.svg#tech"></use>
                     </svg>
@@ -138,8 +139,8 @@
                 <!-- /.col-2 -->
             </div>
             <!-- /.row -->
-            <div class="row">
-                <div class="col-5 intro__form">
+            <div class="row justify-content-center justify-content-md-start">
+                <div class="col-sm-12 col-lg-5 intro__form">
                     <div class="intro__form--title">Заполните форму ниже и мы перезвоним Вам</div>
                     <!-- /.intro__form--title -->
                     <div class="intro__form--box">
@@ -169,8 +170,8 @@
     <!-- /.main -->
     <section class="adv">
         <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-5">
+            <div class="row justify-content-between justify-content-md-center">
+                <div class="col-12 col-md-10 col-lg-5">
                     <h3 class="adv__title title"><span class="blue">Преимущества</span> работы с нами</h3>
                     <!-- /.adv__title -->
                     <p class="adv__descr">Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем массового участия. Таким образом сложившаяся структура организации позволяет выполнять важные</p>
@@ -182,7 +183,7 @@
                     <!-- /.btn -->
                 </div>
                 <!-- /.col-5 -->
-                <div class="col-6">
+                <div class="col-md-10 col-lg-6 mt-md-2">
                     <div class="row">
                         <div class="col-6">
                             <div class="adv__box--item item">
@@ -245,7 +246,7 @@
             <h3 class="work__title title"><span class="blue">Как</span> мы работаем</h3>
             <!-- /.work__title -->
             <div class="row justify-content-center work__box">
-                <div class="col-3 work__item--wrapper">
+                <div class="col-md-12 col-lg-3 work__item--wrapper">
                     
                         <div class="work__item">
                             <svg class="work__item--icon i-phone">
@@ -259,7 +260,7 @@
                     <!-- /.work__item--wrapper -->
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3 work__item--wrapper">
+                <div class="col-md-12 col-lg-3  work__item--wrapper">
                   
                         <div class="work__item">
                             <svg class="work__item--icon i-car">
@@ -274,7 +275,7 @@
                     
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3 work__item--wrapper">
+                <div class="col-md-12 col-lg-3  work__item--wrapper">
                     
                         <div class="work__item">
                             <svg class="work__item--icon i-furniture">
@@ -289,7 +290,7 @@
                     
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3 work__item--wrapper">
+                <div class="col-md-12 col-lg-3  work__item--wrapper">
                     <div class="">
                         <div class="work__item">
                             <svg class="work__item--icon i-like">
@@ -375,12 +376,13 @@
                                     <input type="text" class="input input__name--discount" placeholder="Ваше имя">
                                 </span> 
                                 <!-- /.form__input -->
-                                <button class="btn btn__blue btn__intro">Вызвать мастера</button>
+                                <button class="btn btn__blue btn__discount">Вызвать мастера</button>
                                  <!-- /.btn -->
                             </form>
                             <!-- /.form__input -->
+                            <small>Нажимая кнопку “Получить скидку” Вы соглашаетесь на обработку данных.</small>
                         </div>
-                        <small>Нажимая кнопку “Получить скидку” Вы соглашаетесь на обработку данных.</small>
+                        
                         <!-- /.intro__form--box -->
                     </div>
                     <!-- /.col-7 -->
@@ -397,11 +399,11 @@
     <section class="reason">
         <div class="container">
             <div class="row reason__inner">
-                <div class="col-6">
+                <div class="col-lg-6">
                     <img src="img/reason-man.png" alt="Мужчина" class="reason--man">
                 </div>
                 <!-- /.col-6 -->
-                <div class="col-6">
+                <div class="col-lg-6">
                     <h3 class="reason__title title">Почему вам <span class="blue">стоит обратиться </span> к нам?</h3>
                     <!-- /.reason__title -->
                     <p class="reason__descr">Значимость этих проблем настолько очевидна, что высокотехнологичная концепция общественного уклада влечет за собой процесс внедрения и модернизации новых предложенийюИмеется спорная точка зрения, гласящая примерно следующее: многие известные личности ассоциативно распределены по отраслям</p>
@@ -421,83 +423,89 @@
             <!-- /.review__title -->
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide review__item">
-                        <img class="review__item--img" src="img/photo-1.png" alt="">
-                        <div class="review__item--text item-text">
-                            <div class="item-text__top">
-                                <div class="item-text__name">Ирина Ситор</div>
-                                <!-- /.item__text--name -->
-    
-                                <div class="item-text__date">23.04.2020</div>
-                                <!-- /.item__text--date -->
+                    <div class="swiper-slide">
+                        <div class="review-item">
+                            <img class="review-item--img" src="../img/photo-1.png" alt="Фотография">
+                            <!-- /.review-item--img -->
+                            <div class="review-item--text item-text">
+                                <div class="item-text--top">
+                                    <div class="item-text--name">Ирина Ситор</div>
+                                    <!-- /.item-text__name -->
+                                    <div class="item-text--date">23.04.2020</div>
+                                    <!-- /.item-text__date -->
+                                </div>
+                                <!-- /.item-text__top -->
+                                <div class="item-text--text">Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем </div>
+                                    <!-- /.item-text__text -->
                             </div>
-                            <!-- /.item__text--top -->
-                            <div class="item-text__text">
-                                Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем 
-                            </div>
-                            <!-- /.item__text--text -->
+                            <!-- /.review-item--text -->
                         </div>
-                        <!-- /.swiper-slide__text slide__text -->
+                        <!-- /.review-item -->
                     </div>
                     <!-- /.swiper-slide -->
-                    <div class="swiper-slide review__item">
-                        <img class="review__item--img" src="img/photo-2.png" alt="">
-                        <div class="review__item--text item-text">
-                            <div class="item-text__top">
-                                <div class="item-text__name">Ирина Ситор</div>
-                                <!-- /.item__text--name -->
-    
-                                <div class="item-text__date">23.04.2020</div>
-                                <!-- /.item__text--date -->
+                    <div class="swiper-slide">
+                        <div class="review-item">
+                            <img class="review-item--img" src="../img/photo-2.png" alt="Фотография">
+                            <!-- /.review-item--img -->
+                            <div class="review-item--text item-text">
+                                <div class="item-text--top">
+                                    <div class="item-text--name">Ирина Ситор</div>
+                                    <!-- /.item-text__name -->
+                                    <div class="item-text--date">23.04.2020</div>
+                                    <!-- /.item-text__date -->
+                                </div>
+                                <!-- /.item-text__top -->
+                                <div class="item-text--text">Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем </div>
+                                    <!-- /.item-text__text -->
                             </div>
-                            <!-- /.item__text--top -->
-                            <div class="item-text__text">
-                                Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем 
-                            </div>
-                            <!-- /.item__text--text -->
+                            <!-- /.review-item--text -->
                         </div>
-                        <!-- /.swiper-slide__text slide__text -->
+                        <!-- /.review-item -->
                     </div>
                     <!-- /.swiper-slide -->
-
-                    <div class="swiper-slide review__item">
-                        <img class="review__item--img" src="img/photo-1.png" alt="">
-                        <div class="review__item--text item-text">
-                            <div class="item-text__top">
-                                <div class="item-text__name">Ирина Ситор</div>
-                                <!-- /.item__text--name -->
-    
-                                <div class="item-text__date">23.04.2020</div>
-                                <!-- /.item__text--date -->
+                    <div class="swiper-slide">
+                        <div class="review-item">
+                            <img class="review-item--img" src="../img/photo-1.png" alt="Фотография">
+                            <!-- /.review-item--img -->
+                            <div class="review-item--text item-text">
+                                <div class="item-text--top">
+                                    <div class="item-text--name">Ирина Ситор</div>
+                                    <!-- /.item-text__name -->
+                                    <div class="item-text--date">23.04.2020</div>
+                                    <!-- /.item-text__date -->
+                                </div>
+                                <!-- /.item-text__top -->
+                                <div class="item-text--text">Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем </div>
+                                    <!-- /.item-text__text -->
                             </div>
-                            <!-- /.item__text--top -->
-                            <div class="item-text__text">
-                                Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем 
-                            </div>
-                            <!-- /.item__text--text -->
+                            <!-- /.review-item--text -->
                         </div>
-                        <!-- /.swiper-slide__text slide__text -->
+                        <!-- /.review-item -->
                     </div>
                     <!-- /.swiper-slide -->
-                    <div class="swiper-slide review__item">
-                        <img class="review__item--img" src="img/photo-2.png" alt="">
-                        <div class="review__item--text item-text">
-                            <div class="item-text__top">
-                                <div class="item-text__name">Ирина Ситор</div>
-                                <!-- /.item__text--name -->
-    
-                                <div class="item-text__date">23.04.2020</div>
-                                <!-- /.item__text--date -->
+                    <div class="swiper-slide">
+                        <div class="review-item">
+                            <img class="review-item--img" src="../img/photo-2.png" alt="Фотография">
+                            <!-- /.review-item--img -->
+                            <div class="review-item--text item-text">
+                                <div class="item-text--top">
+                                    <div class="item-text--name">Ирина Ситор</div>
+                                    <!-- /.item-text__name -->
+                                    <div class="item-text--date">23.04.2020</div>
+                                    <!-- /.item-text__date -->
+                                </div>
+                                <!-- /.item-text__top -->
+                                <div class="item-text--text">Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем </div>
+                                    <!-- /.item-text__text -->
                             </div>
-                            <!-- /.item__text--top -->
-                            <div class="item-text__text">
-                                Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем 
-                            </div>
-                            <!-- /.item__text--text -->
+                            <!-- /.review-item--text -->
                         </div>
-                        <!-- /.swiper-slide__text slide__text -->
+                        <!-- /.review-item -->
                     </div>
                     <!-- /.swiper-slide -->
+                    
+                    
+                   
                 </div>
                 <!-- /.swiper-wrapper -->
                 <div class="swiper-pagination"></div>
@@ -508,26 +516,6 @@
                 <!-- /.swiper-button-next -->
             </div>
             <!-- /.swiper-container -->
-
-                
-            
-            
-            
-            
-              <!-- Initialize Swiper -->
-              <script>
-                var swiper = new Swiper('.swiper-container', {
-                  slidesPerView: 2,
-                  spaceBetween: 30,
-                  pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                  },
-                 width: 1004,
-                 height: 300
-                
-                });
-              </script>
         </div>
         <!-- /.contaier -->
     </section>
@@ -539,21 +527,21 @@
                 <h3 class="question__title title">Остались вопросы?</h3>
             <!-- /.question__title -->
             <div class="row justify-content-center question__form">
-                <div class="col-5 mb-4">
+                <div class="col-11 col-md-5 mb-4">
                     <span class="form__input--wrapper">
                         <input type="text" class="input input__name--question" placeholder="Ваше имя" required>
                     </span> 
                     <!-- /.form__input -->
                 </div>
                 <!-- /.col-5 -->
-                <div class="col-5 mb-4">
+                <div class="col-11 col-md-5 mb-4">
                     <span class="form__input--wrapper">
                         <input type="text" class="input input__number--question" placeholder="Ваш телефон" required>
                     </span> 
                     <!-- /.form__input -->
                 </div>
                 <!-- /.col-5 -->
-                <div class="col-10">
+                <div class="col-11 col-md-10">
                     <span class="form__input--wrapper">
                         <textarea type="text" class="input input__text--question" placeholder="Ваш запрос..."></textarea>
                     </span>
@@ -561,8 +549,8 @@
                 <!-- /.col-10 -->
             </div>
             <!-- /.row -->
-            <div class="row question__form--bottom">
-                <div class="col-auto offset-1 ">
+            <div class="row justify-content-center question__form--bottom">
+                <div class="col-auto offset-mb-1 ">
                     <button class="btn btn__blue btn__question">Получить ответ</button>
                 </div>
                 <small class="light">Нажимая кнопку “Получить ответ” Вы соглашаетесь на обработку данных.</small>
@@ -580,7 +568,7 @@
     <section class="contact">
         <div class="container">
             <div class="row">
-                <div class="col-5">
+                <div class="col-12 col-lg-5">
                     <div class="contact__inner">
                         <div class="contact__text">
                             <h3 class="contact__text--title title">Наши контакты</h3>
@@ -623,7 +611,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row footer__inner">
-                <a class="col-3 logo" href="#">
+                <a class="col-5 col-sm-4 col-md-3 logo" href="#">
                     <div class="logo__img">
                         <img class="i-shield" src="img/shield.svg" alt="Логотип Shield Soft" >
                     </div>
@@ -636,7 +624,7 @@
                     <!-- /.logo__text -->
                 </a>
                 <!-- /.col-3 -->
-                <div class="col offset-1 menu">
+                <div class="col offset-md-1 menu">
                     <nav class="footer__menu">
                         <a class="footer__menu--link" href="#">Прайс</a> 
                         <!-- /.footer__menu--link -->
@@ -649,7 +637,7 @@
                     </nav>
                 </div>
                     <!-- /.footer__menu -->
-                <div class="col-auto contacts">
+                <div class="col-11 col-md-auto contacts">
                     <div class="contacts__wrapper">
                         <svg class="i-bphone">
                             <use xlink:href="sprite.svg#bphone"></use>
@@ -666,8 +654,8 @@
                 <!-- /.contacts-->
             </div>
             <!-- /.row -->
-            <div class="row">
-                <div class="col offset-4 footer__text">
+            <div class="row justify-content-md-center">
+                <div class="col offset-lg-4 footer__text">
                     <a class="footer__text--policy" href="#" >Политика конфиденциальности</a> 
                     <!-- /.footer__policy -->
                     <span class="footer__text--offer">Представленная информация на сайте не является публичной офертой</span>
@@ -680,5 +668,40 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+   
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+         width: 1004,
+         height: 300,
+         breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 100
+              },
+            758: {
+              slidesPerView: 2,
+              spaceBetween: 30
+            }
+          }
+        });
+      </script>
+      <script>
+        $(document).ready(function () {
+            $('.header__top, .header__top--burger').click(function() {
+                $('.header__menu--link').slideToggle(300);
+            });
+        });
+      </script>
 </body>
 </html>

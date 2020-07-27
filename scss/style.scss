@@ -35,6 +35,13 @@ img {
     margin: 0 auto;
 }
 
+.header {
+    &__top {
+        &--burger {
+            display: none;
+        }
+    }
+}
 
 .header__main {
     padding: 26px 0 19px 0;
@@ -45,7 +52,7 @@ img {
 
 .logo {
     display: flex;
-    align-items: end;
+    align-items: center;
     &__img {
         margin-right: 11px;
         width: 36px;
@@ -203,6 +210,7 @@ img {
 
 
 .intro {
+    width: 100%;
     padding-bottom: 111px;
     background-image: url("../img/bg/bgimage.png");
     background-size: cover;
@@ -527,7 +535,7 @@ img {
     
     &--man {
         width: 100%;
-        height: 371px;
+        height: auto;
     }
     &__title {
         padding-right: 37px;
@@ -545,44 +553,44 @@ img {
         text-align: center;
         margin-bottom: 45px;
     }
-    &__item {
-        position: relative;
+    &-item {
+        width: 487px;
+        display: flex;
+        background-color: $light;
+        box-shadow: 0 8px 20px rgba(187, 207, 222, 0.38);
+        border-radius: 4px;
         &--img {
             display: block;
-            width: 250px;
-            height: 100%;
+            width: 100%;
+            height: auto;
+            clip-path: polygon(0 0, 60% 0, 80% 100%, 0 100%);
             object-fit: cover;
-            clip-path: polygon(0 0, 40% 0, 50% 100%, 0% 100%);
-        }
-        &--text {
-            position: absolute;
-            top: 0;
-            right: 40px;
+            object-position: left;
         }
     }
 }
 .item-text {
-    margin-top: 40px;
+    padding: 73px 40px 73px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: $dark;
-    &__top {
+    &--top {
         display: flex;
         align-items: center;
         justify-content: space-between;
         font-weight: 800;
     }
-    &__name {
+    &--name {
         font-size: 18px;
     }
-    &__date {
+    &--date {
         font-size: 14px;
     }
-    &__text {
-        width: 268px;
+    &--text {
         font-weight: 400;
-        text-align-last: left;
+        text-align: left;
+        line-height: 1;
     }
 }
 
@@ -770,16 +778,524 @@ img {
         color: $dark;
        }
     }
-    &-slide {
-        width: 487px;
-        height: 247px;
-        background-color: $light;
-        box-shadow: 0 8px 20px rgba(187, 207, 222, 0.38);
-        border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        &__menu {
+            &--link {
+                margin-right: 2px;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    /*Header*/
+    .logo {
+        &__img {
+            margin-right: 11px;
+            width: 30px;
+            height: 24px;
+        }
+        &__text {
+            &--title {
+                font-size: 16px;
+            }
+            &--descr {
+                font-size: 10px;
+            }
+        }
+    
+    }
+
+    .header__main {
+        padding: 2% 0;
+    }
+
+    .header {
+        position: relative;
+        &__menu {
+            display: flex;
+            flex-direction: column;
+            &--link {
+                display: none;
+            }
+        }
+        &__top {
+            &--burger {
+                display: block; 
+                outline: none;    
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                border: none;
+                background-color: transparent;
+            }
+        }
+    }
+    .inf {
+        display: none;
+    }
+    .i-menu {
+        width: 20px;
+        height: 20px;
+        fill: $blue;
+    }
+
+    /*Intro*/
+    .intro {
+        &__title {
+            margin-top: 0;
+            font-size: 50px;
+            text-align: center;
+        }
+        &__inner {
+            margin-top: 5%;
+        }
+        &__form {
+            text-align: center;
+            margin-top: 7%;
+            &--title {
+                font-size: 16px;
+                font-weight: 800;
+            }
+            &--box {
+                text-align: center;
+                padding: 15px 0 12px 0;
+            }
+        }
+        &__img {
+            display: none;
+        }
+    }
+    
+    /*Advantages*/
+    .adv {
+        padding: 5% 0;
+        &__title {
+            padding: 0 32px 0 0;
+        }
+        &__descr {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    /*Work*/ 
+        .work {
+            padding: 5% 0;
+            &__title {
+                text-align: center;
+            }
+            &__box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 52px;
+            }
+            &__item {
+                margin-bottom: 20px;
+                text-align: center;
+                &--wrapper {
+                   position: relative;
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    /*Discount*/
+    .discount {
+        padding: 5% 0;
+        &__inner {
+            padding: 2% 0x;
+            box-shadow: 0 7px 22px 2px rgba(39, 134, 251, 0.15), 0 1px 1px rgba(0, 0, 0, 0.1);
+            background-color: #ebf1f7;
+            background-image: url("../img/bg/remont-noutbukov-v-chite.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right;
+        }
+        &__title {
+            text-align: center;
+            color: $light;
+            padding-right: 0;
+        }
+        &__name {
+            margin-right: 10px;
+            width: 292px;
+            padding: 16px 0 16px 20px;
+        }
+        &__form {
+            text-align: center;
+            &--box {
+                text-align: center;
+                padding-top: 25px;
+                padding-bottom: 12px;
+            }
+        }
+    
+    }
+
+    /*Reasons*/ 
+    .reason {
+        &__inner {
+            padding: 3% 0;
+        }
+        
+        &--man {
+            width: 100%;
+            height: auto;
+        }
+        &__title {
+            text-align: center;
+            padding-right: 0;
+        }
+    }
+
+    /*Review*/
+    .review {
+        padding: 5% 0;
+    }
+
+    /*Contact*/ 
+    .contact {
+        &__text {
+            padding: 4% 2%;
+        }
+    }
+
+    /*Footer*/ 
+    .footer {
+       padding: 2% 0;
+       &__text {
+        margin-top: 0;
+        text-align: center;;
+        &--offer {
+            margin-left: 0
+        }
+    }   
+    }
+}
+@media (max-width: 768px) {
+    /*Header*/ 
+    .logo {
+        &__text {
+            &--title {
+                font-size: 13px;
+            }
+            &--descr {
+                font-size: 12px;
+            }
+        }
+    }
+    /*Intro*/ 
+
+    .intro {
+
+        background-position: top;
+        &__title {
+            font-size: 40px;
+        }
+        &__subtitle {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    /*Price*/ 
+    .price {
+        &__table {
+            th {
+                font-size: 12px;
+            }
+            td {
+                font-size: 12px
+            }
+        }
+        &__more {
+            font-size: 12px;
+        }
+    }
+
+    /*Discount*/ 
+    .discount {
+        &__inner {
+            background-position: bottom;
+        }
+    }
+
+    /*Questions*/
+    .light {
+        margin-left: 60px;
+        text-align: right;
+    }
+
+    .question {
+        &__form {
+            padding: 2% 0;
+        }
+    }
+
+    /*Contact*/ 
+    .contact {
+        h4 {
+            margin-bottom: 0;
+        }
+    }
+   
+
+    /*Footer*/
+    .footer {
+        &__menu {
+            &--link {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    /*Review*/
+
+
+.review {
+    &-item {
+        width: 350px;
+    }
+}
+.item {
+    &-text {
+        padding: 40px 20px 40px 0;
     }
 }
 
+/*Swiper*/
+    .swiper {
+        &-container {
+            width: 100%;
+            height: 100%;
+        }
+        &-wrapper {
+            margin-bottom: 50px;
+            padding: 0 67px; 
+        }
+        &-pagination{
+            margin-top: 40px;
+        }
+        &-button {
+           &-prev {
+            width: 10px;
+            height: 18px;
+            color: $dark;
+           }
+           &-next {
+            width: 10px;
+            height: 18px;
+            color: $dark;
+           }
+        }
+        &-slide {
+            background-color: $light;
+            box-shadow: 0 8px 20px rgba(187, 207, 222, 0.38);
+            border-radius: 4px;
+        }
+    }
+}
+@media (max-width: 758px) {
+    .btn {
+        &__discount {
+            margin-top: 10px;
+        }
+    }
+}
+   
+@media (max-width: 576px) {
+    .logo {
+        margin: 0 auto;
+        &__text {
+            &--title {
+                line-height: 1;
+            }
+            &--descr {
+                line-height: 1;
+            }
+        }
+    
+    }
 
+    .intro {
+        &__title {
+            margin-bottom: 10px;
+            font-size: 26px;
+            line-height: 1;
+        }
+        &__subtitle {
+            text-align: center;
+            font-size: 17px;
+            line-height: 1;
+        }
+        &__item {
+            margin-bottom: 10px;
+        }
+        &__form {
+            margin-top: 0;
+        }
+    }
+
+    .price {
+        &__more {
+            margin-left: 0;
+        }
+        &__money {
+            display: none;
+        }
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .discount {
+        &__inner {
+            padding: 2% 1%;
+        }
+        &__form {
+            &--box {
+                padding: 0;
+            }
+        }
+    }
+
+    small {
+        color: $light;
+    }
+    .input {
+        &__name {
+            &--discount {
+                width: 250px;
+            }
+        }
+        &__text {
+            &--contact {
+                padding: 17px 30px;
+            }
+            &--question {
+                padding: 17px 30px;
+            }
+        }
+    }
+
+    .light {
+        padding: 0 5%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contact {
+        &__form {
+            display: flex;
+            flex-direction: column;
+            &--bottom {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &__small {
+            margin-top: 10px;
+            color: $dark;
+        }
+    }
+    .input {
+        &__name {
+            &--contact {
+                margin-right: 0;
+                width: 100%;
+                padding: 17px 24px;
+                border: 1px solid #e8e8e8;
+            }
+        }
+        &__number {
+            &--contact {
+                width: 100%;
+                padding: 17px 24px;
+                border: 1px solid #e8e8e8;
+            }
+        }
+        &__text {
+            &--contact {
+                width: 100%;
+                padding: 17px 24px;
+                border: 1px solid #e8e8e8; 
+            }
+        }
+    }
+    .btn {
+        &__adv {
+            padding: 10px 60px;
+            margin-bottom: 10px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        &__question {
+            margin-bottom: 10px;
+        }
+        &__footer {
+            padding: 5px 10px;
+        }
+
+    }
+
+    .footer {
+        &__menu {
+            &--link {
+                font-size: 13px;
+                margin-right: 3px;
+            }
+        }
+    }
+    .contacts {
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+@media (max-width: 385px) {
+    .btn {
+        &__intro {
+            width: 100%;
+            margin-top: 10px;
+        }
+        &__discount {
+            width: 100%;
+        }
+    }
+    .input {
+        &__name {
+            &--discount {
+                width: 100%;
+            }
+        }
+        &__number {
+            &--intro {
+                width: 100%;
+            }
+        }
+    }
+    .footer {
+        &__inner {
+            display: flex;
+            flex-direction: column;
+        }
+        &__menu {
+            text-align: center;
+        }
+    }
+    .contacts {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 @font-face {
     font-family: 'Circe';
