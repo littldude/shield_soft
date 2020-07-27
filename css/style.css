@@ -1170,6 +1170,22 @@ img {
     flex-direction: column;
   }
 }
+@media (max-width: 350px) {
+  .review-item {
+    width: 250px;
+  }
+  .review-item--img {
+    display: none;
+  }
+
+  .item-text {
+    padding: 3% 2%;
+  }
+
+  .swiper-wrapper {
+    padding-left: 7%;
+  }
+}
 @font-face {
   font-family: "Circe";
   src: url("../fonts/Circe-Bold.woff") format("woff");
